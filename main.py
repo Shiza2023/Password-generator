@@ -11,8 +11,7 @@ def generatr_password():
     kol = int(input("Введите количество паролей: "))
 
     for _ in range(kol):
-        print(*(sample(chars, 6) +
-              ["-"] + sample(chars, 6) + ["-"] + sample(chars, 6)), sep="")
+        print(*(sample(chars, 6) + ["-"] + sample(chars, 6) + ["-"] + sample(chars, 6)), sep="")
 
 
 generatr_password()
